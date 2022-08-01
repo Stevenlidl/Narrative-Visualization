@@ -3,6 +3,12 @@ CS 416 Data Visualization Final Project
 
 Project Live Link: [Varrative Visualization for CS 416](http://stevenli.online/Narrative-Visualization/)
 
+Data Source:
+[The World Bank](https://www.worldbank.org/en/home)
+[Overall data](https://data.worldbank.org/indicator/SH.DYN.NCOM.MA.ZS?name_desc=false)
+[Male data](https://data.worldbank.org/indicator/SH.DYN.NCOM.ZS?name_desc=false)
+[Female Data](https://data.worldbank.org/indicator/SH.DYN.NCOM.FE.ZS?name_desc=false)
+
 ### Messaging. 
 What is the message you are trying to communicate with the narrative visualization?
 This visualization project aims to ask why the average rate of Mortality from CVD, cancer, diabetes, or CRD is so different between different income group and gender. I have doubts while I was working on the previous Tableau Dashboard project and it leads me to make this story to explore more and question myself and audience.
