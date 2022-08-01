@@ -5,7 +5,7 @@ Project Live Link: [Varrative Visualization for CS 416](http://stevenli.online/N
 
 ### Messaging. 
 What is the message you are trying to communicate with the narrative visualization?
-This visualization project aims to ask why the average rate of Mortality from CVD, cancer, diabetes, or CRD is so different between different income group and gender. I have toubt while I was working on the previous Tableau Dashboard project and it leads me to make this story to explore more and question myself and audience.
+This visualization project aims to ask why the average rate of Mortality from CVD, cancer, diabetes, or CRD is so different between different income group and gender. I have doubts while I was working on the previous Tableau Dashboard project and it leads me to make this story to explore more and question myself and audience.
 
 As medicare and technology grow, people should be less likely to Mortality from CVD, cancer, diabetes, or CRD compare to past days. It is known that as a country being developed well, the people have more money to put into their healthy and healthy habits. Therefore, it was natural to think that the  Mortality rate from CVD, cancer, diabetes or CRD in higher-income group countries will be lower than in lower-income group countries. However, when I check the female data, it shows the hypothesis was not 100% correct. The low-income group has a lower rate than the lower middle-income group. Also, based on the total data (female + male), the low-income group has a similar rate compared to the lower middle-income group. Another observation from the data is the female Mortality rate is clearly lower than males. 
 
