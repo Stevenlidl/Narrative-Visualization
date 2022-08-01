@@ -1,11 +1,10 @@
 //  * @param {*} type "male", "female", "total" (male+female)
 function loadChart(type){
-    console.log(type);
+        console.log(type);
       // Set the dimensions of the canvas / graph
       var margin = {top: 100, right: 20, bottom: 30, left: 80},
           width = 1080 - margin.left - margin.right,
           height = 550 - margin.top - margin.bottom;
-  
       // Set the ranges
       var xScale =  d3.scaleBand().domain([2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019]).range([0, width]),
       yScale = d3.scaleLinear().domain([0, 60]).range([height, 0]);
@@ -202,31 +201,48 @@ function loadChart(type){
 }
 
 function initial(){
+    var isTotalChartLoaded = false, isMaleChartLoaded = false, isFemaleChartLoaded = false;
+
     document.getElementById("to_scene1").addEventListener("click", function() {
         switchVisibility('scene0');
         switchVisibility('scene1');    
-        loadChart("total");
+        console.log(isTotalChartLoaded);
+        if(!isTotalChartLoaded){
+            loadChart("total");
+            isTotalChartLoaded = !isTotalChartLoaded;
+        } else{
+            switchVisibility('sce-canvas-total');    
+        }
     });
     
     document.getElementById("to_scene2").addEventListener("click", function() {
         switchVisibility('scene1');
         switchVisibility('scene2');    
         switchVisibility('sce-canvas-total');    
-        loadChart("male");
+        if(!isMaleChartLoaded){
+            loadChart("male");
+            isMaleChartLoaded = !isMaleChartLoaded;
+        } else{
+            switchVisibility('sce-canvas-male');    
+        }
     });
     
     document.getElementById("to_scene3").addEventListener("click", function() {
         switchVisibility('scene2');
         switchVisibility('scene3');   
         switchVisibility('sce-canvas-male');    
-        loadChart("female");
+        if(!isFemaleChartLoaded){
+            loadChart("female");
+            isFemaleChartLoaded = !isFemaleChartLoaded;
+        } else{
+            switchVisibility('sce-canvas-female');    
+        }
     });
     
     document.getElementById("start_over").addEventListener("click", function() {
         switchVisibility('scene3');
         switchVisibility('scene0');    
         switchVisibility('sce-canvas-female');    
-        switchVisibility('total');    
     });
 }
 
