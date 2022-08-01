@@ -1,0 +1,64 @@
+body {
+    font: 11px sans-serif;
+  }
+  
+  h2.subtitle {
+    font-size: 0.8em;
+    padding-left: 10px;
+    color: #666;
+  }
+  
+  #container{
+    margin: auto;
+    padding-top: 20px;
+    width: 1080px;
+  }
+  
+  
+  /* Here is our relatively positioned container div to hold the rest of the visualization */
+  #sce-container {
+    position: relative;
+    width: 1080px;
+    height: 610px;
+    margin-top: 10px;
+  }
+  
+  #sce-nav {
+    z-index: 20;
+  }
+  
+  /* Change the background color. */
+  #sce-canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    overflow: hidden;
+    background-color: #eee;
+  }
+  
+  .axis path {
+    stroke: black;
+    stroke-width: 2px;
+}
+
+.axis line {
+    stroke: black;
+    stroke-width: 1.5px;
+}
+
+.axis text {
+    fill: black;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: "Arial Black", Gadget, sans-serif;
+}
+
+.legend text {
+    fill: black;
+    font-family: "Arial Black", Gadget, sans-serif;
+}
+
+.dot {
+    stroke: #000;
+}

@@ -1,0 +1,80 @@
+<!doctype html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Narrative Visualization Project For CS 416 Data Visualization</title>
+    <meta name="author" content="Zixiang Li">
+    <meta name="description"
+        content="This is a Narrative Visualization Project for UIUC CS 416 Data Visualization Summer 2022">
+    <link rel="stylesheet" href="css/slide.css">
+
+    <script src='https://d3js.org/d3.v5.min.js'></script>
+    <script src="https://unpkg.com/topojson-client@3"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-annotation/2.5.1/d3-annotation.min.js"></script>
+    <script src="https://d3js.org/colorbrewer.v1.min.js"></script>
+    <script src="./js/load.js" charset="utf-8"></script>
+
+</head>
+
+
+<body onload="initial()">
+    <div id="container" class="container-fluid">
+        <h1>The Trends of Mortality from CVD, cancer, diabetes or CRD</h1>
+        <h2 class="subtitle">Visualization is based on data from The World Bank which including between exact ages 30
+            and 70 from 2001 to 2019.</h2>
+        <div id="sce-container">
+
+            <div id="scene0" class="container">
+                <div>
+                    <p>
+                        <h1>0.scene 0</h1>
+                        This scene shows the 
+                    </p>
+                    <p>
+                        <div id="to_scene1"><a href="#">View next scene >>></a></div>
+                    </p>
+                </div>
+            </div>
+
+            <div id="scene1" class="container" style="display:none;">
+                <div>
+                    <p>
+                        <h1>1.scene 1</h1>
+                        This scene shows the 
+                    </p>
+                    <p>
+                        <div id="to_scene2"><a href="#">View next scene >>></a></div>
+                    </p>
+                </div>
+                <div id="sce-canvas-total"></div>
+            </div>
+
+            <div id="scene2" class="container" style="display:none;">
+                <div>
+                    <p>
+                        <h1>2.scene 2</h1>
+                        This scene shows the 
+                    </p>
+                    <p>
+                        <div id="to_scene3"><a href="#">View next scene >>></a></div>
+                    </p>
+                </div>
+                <div id="sce-canvas-male"></div>
+            </div>
+
+            <div id="scene3" class="container" style="display:none;">
+                <div>
+                    <p>
+                        <h1>3.scene 3</h1>
+                        This scene shows the 
+                    </p>
+                    <p>
+                        <div id="start_over"><a href="#">Start Over >>></a></div>
+                    </p>
+                <div id="sce-canvas-female"></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
